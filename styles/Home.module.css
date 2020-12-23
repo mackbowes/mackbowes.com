@@ -1,3 +1,4 @@
+
 .container {
   min-height: 100vh;
   padding: 0 0.5rem;
@@ -5,16 +6,21 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(#02040f, #050b27);
+  background-color: #02040f;
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
 .header {
   padding: 1rem;
   font-family: 'Source Serif Pro', serif;
   font-weight: 400;
-  background-color: #01030c;
-  color: #f7fcff;
+  background-color: #a0c1db;
+  color: #3e609f;
   width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
   text-align: center;
 }
 
@@ -23,13 +29,12 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
 }
 
 .footer {
   width: 100vh;
-  border-top: 1px solid #eaeaea;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,19 +42,12 @@
 }
 
 .footer .card {
-  background-color: #f7fcff;
-  color: #01030c;
+  background-color: #a0c1db;
+  color: #04081b;
+  padding: 1rem 2rem;
 }
-
-.title a {
-  color: #939c5d;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
+.footer .card h3, .footer .card p {
+  line-height: 1;
 }
 
 .title {
@@ -60,8 +58,7 @@
 .description {
   line-height: 1.5;
   font-size: 1.5rem;
-  padding: 0 1rem;
-  text-align: center;
+  text-align: left;
 }
 
 .code {
@@ -79,7 +76,7 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 800px;
+  max-width: 1080px;
   margin-top: 3rem;
 }
 
@@ -90,16 +87,20 @@
   text-align: left;
   color: inherit;
   text-decoration: none;
-  border: 1px solid #eaeaea;
   border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
+  background-color: #04081b;
+  box-shadow: -3px 3px 0px white;
+  border: 3px solid white;
+  transition: color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
 .card:hover,
 .card:focus,
 .card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+  color: #4f9469;
+  border-color: #4f9469;
+  box-shadow: -3px 3px 0px #4f9469;
+  background-color: #c2e5c2;
 }
 
 .card h3 {
@@ -121,5 +122,10 @@
   .grid {
     width: 100%;
     flex-direction: column;
+  }
+}
+@media (min-width: 600px) {
+  .header h1, .header a {
+    padding: 0 3rem;
   }
 }

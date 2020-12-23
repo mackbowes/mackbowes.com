@@ -1,60 +1,72 @@
 import Head from 'next/head'
+import Link from 'next/link'
+import { motion } from "framer-motion"
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>mackbowes.com</title>
+        <title>Mack Bowes</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <header className={styles.header}>
-      <h1 className={styles.title}>
-        mack bowes
-      </h1>
+      <Link href="/">
+        <h1 className={styles.title}>
+          <a>mackbowes.com</a>
+        </h1>
+      </Link>
       </header>
       <main className={styles.main}>
-
-      <p className={styles.description}>
-      developer / advertiser <br /> designer / musician
-      </p>
-
-        <div className={styles.grid}>
-          <a href="/developer" className={styles.card}>
-            <h3>Development &rarr;</h3>
-            <p>Take an in depth look at my development work - Github, Portfolio, Development Blog &amp; so on.</p>
-          </a>
-
-          <a href="/advertising" className={styles.card}>
-            <h3>Advertising &rarr;</h3>
-            <p>Access Advertising focused work - Blog, Guides, &amp; Templates.</p>
-          </a>
-
-          <a
-            href="/design"
-            className={styles.card}
-          >
-            <h3>Design &rarr;</h3>
-            <p>View delightful design resources I've discovered or created.</p>
-          </a>
-
-          <a
-            href="/music"
-            className={styles.card}
-          >
-            <h3>Music &rarr;</h3>
-            <p>
-              I love music - maybe someday I'll share my work, for now it's a collection of songs I love.
-            </p>
-          </a>
-        </div>
+      <h2 className={styles.description}>
+      hi, i'm mack bowes.</h2>
+      <div className={styles.description}>
+      i'm a:<br />
+      <motion.div
+        whileHover={{
+          scale: 1.1,
+          transition: {duration: .5},
+        }}
+        whileTap={{
+          scale: 0.9
+        }}><Link href="/development"><a onClick="()">developer &rarr;</a></Link></motion.div>
+      <motion.div
+        whileHover={{
+          scale: 1.1,
+          transition: {duration: .5},
+        }}
+        whileTap={{
+          scale: 0.9
+        }}><Link href="/design"><a onClick="()">designer &rarr;</a></Link></motion.div>
+      <motion.div
+        whileHover={{
+          scale: 1.1,
+          transition: {duration: .5},
+        }}
+        whileTap={{
+          scale: 0.9
+        }}><Link href="/advertising"><a>&amp; advertiser &rarr;</a></Link><br />
+      </motion.div>
+      <motion.div
+        whileHover={{
+          scale: 1.1,
+          transition: {duration: .5},
+        }}
+        whileTap={{
+          scale: 0.9
+      }}><Link href="/music"><a>&amp; musician (for fun) &rarr;</a></Link></motion.div>
+      </div>
       </main>
 
       <footer className={styles.footer}>
-        <a href="" className={styles.card}>
-        <h3>Connect on Discord &rarr;</h3>
-        <p>Instantly open a discord chat.</p>
-        </a>
+      <motion.div
+        whileHover={{
+          scale: 1.1,
+          transition: {duration: .5},
+        }}
+        whileTap={{
+          scale: 0.9
+        }}><Link href=""><h3><a>Connect on Discord &rarr;</a></h3></Link></motion.div>
       </footer>
     </div>
   )

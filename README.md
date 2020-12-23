@@ -1,6 +1,6 @@
-#Mack Bowes Site
+# Mack Bowes Site
 
-> A site all my own.
+A site all my own.
 
 ## Goals
 

@@ -5,6 +5,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: linear-gradient(#02040f, #050b27);
+}
+
+.header {
+  padding: 1rem;
+  font-family: 'Source Serif Pro', serif;
+  font-weight: 400;
+  background-color: #01030c;
+  color: #f7fcff;
+  width: 100vw;
+  text-align: center;
 }
 
 .main {
@@ -17,26 +28,21 @@
 }
 
 .footer {
-  width: 100%;
-  height: 100px;
+  width: 100vh;
   border-top: 1px solid #eaeaea;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1rem 2rem;
 }
 
-.footer img {
-  margin-left: 0.5rem;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.footer .card {
+  background-color: #f7fcff;
+  color: #01030c;
 }
 
 .title a {
-  color: #0070f3;
+  color: #939c5d;
   text-decoration: none;
 }
 
@@ -49,21 +55,18 @@
 .title {
   margin: 0;
   line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
-  text-align: center;
 }
 
 .description {
   line-height: 1.5;
   font-size: 1.5rem;
+  padding: 0 1rem;
+  text-align: center;
 }
 
 .code {
-  background: #fafafa;
+  background: #050b27;
+  color: #87accf;
   border-radius: 5px;
   padding: 0.75rem;
   font-size: 1.1rem;

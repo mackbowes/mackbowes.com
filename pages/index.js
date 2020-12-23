@@ -5,59 +5,55 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>mackbowes.com</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
+      <header className={styles.header}>
+      <h1 className={styles.title}>
+        mack bowes
+      </h1>
+      </header>
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
+      <p className={styles.description}>
+      developer / advertiser <br /> designer / musician
+      </p>
 
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
+          <a href="/developer" className={styles.card}>
+            <h3>Development &rarr;</h3>
+            <p>Take an in depth look at my development work - Github, Portfolio, Development Blog &amp; so on.</p>
           </a>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
+          <a href="/advertising" className={styles.card}>
+            <h3>Advertising &rarr;</h3>
+            <p>Access Advertising focused work - Blog, Guides, &amp; Templates.</p>
           </a>
 
           <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+            href="/design"
             className={styles.card}
           >
-            <h3>Deploy &rarr;</h3>
+            <h3>Design &rarr;</h3>
+            <p>View delightful design resources I've discovered or created.</p>
+          </a>
+
+          <a
+            href="/music"
+            className={styles.card}
+          >
+            <h3>Music &rarr;</h3>
             <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
+              I love music - maybe someday I'll share my work, for now it's a collection of songs I love.
             </p>
           </a>
         </div>
       </main>
 
       <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
+        <a href="" className={styles.card}>
+        <h3>Connect on Discord &rarr;</h3>
+        <p>Instantly open a discord chat.</p>
         </a>
       </footer>
     </div>

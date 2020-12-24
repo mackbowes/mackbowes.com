@@ -12,8 +12,11 @@ A site all my own.
 ## TODO
 - Create overview pages for /development, /advertising, /design, & /music
 - Supply each overview page with at least 4 pieces of content
-- Connect site to vercel
-- Launch on custom domain with SSL
+- Add resume to '/' path
+  - Via Markdown, maybe?
+- Figure out how to pass markdown to components
+- Add github link to '/' page
+- Remove 'connect on discord' button & add Twitter, Github, and Discord icons w/ links
 
 
 ## Next.js Stuff

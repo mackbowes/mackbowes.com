@@ -1,11 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@600&display=swap');
 
+:root {
+    --background: #3b444b;
+    --text: #d7d9db;
+    --shade: #171b1e;
+    --tint: #757c81;
+    --box-shadow: 4px 4px 0 0;
+    --deeper-shadow: 8px 8px 0 0;
+}
+
+::selection {
+  color: black;
+  background-color: white;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: 'Source Serif Pro', serif;
-  color: #e1f2e4;
+  background-color: var(--background);
+  color: var(--text);
 }
 
 a {
@@ -15,4 +30,18 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+*:hover {
+  cursor:default;
+}
+a:hover {
+  cursor: pointer;
+}
+h2:hover, h3:hover, h4:hover, p:hover, li:hover {
+  cursor: crosshair;
+}
+h1,h2,h3,h4,h5,h6 {
+  line-height: 1.25;
+  margin: 0;
 }

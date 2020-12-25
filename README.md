@@ -14,11 +14,11 @@ A site all my own.
 - Create overview pages for /development, /advertising, /design, & /music
 - Supply each overview page with at least 4 pieces of content
 ### December 24
-- Add resume to '/' path
-- Add github link to '/' page
-- Remove 'connect on discord' button & add Twitter, Github, and Discord icons w/ links
+- Add resume to '/' path [DONE]
+- Add github link to '/' page [DONE]
+- Remove 'connect on discord' button & add Twitter, Github, and Discord icons w/ links [IN PROGRESS]
 ### December 25
-- Fix mobile css
-- Finish resume
-- Add github / discord / twitter links
+- Fix mobile css [DONE]
+- Finish resume [DONE]
+- Add github / discord / twitter links [DONE]
 - figure out tooltips

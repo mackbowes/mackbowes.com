@@ -133,6 +133,7 @@
 
 section[title="resume"].sectionWrapper {
   grid-template-columns: 1fr;
+  justify-items: stretch;
 }
 
 .ulGrid {
@@ -184,4 +185,9 @@ section[title="resume"].sectionWrapper {
   .ulGrid {
     grid-template-columns: 1fr !important;
   }
+}
+
+article[title="contactLinks"].column {
+  align-self: stretch;
+  justify-self: stretch;
 }

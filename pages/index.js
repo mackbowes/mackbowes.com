@@ -49,11 +49,13 @@ export default function Home() {
           </ul>
           <h3>and i'm actively looking for work to apply this experience.</h3>
           </article>
-          <article className={styles.column}>
-          <h3>Important information for using this site:</h3>
+
+          <article className={styles.column} title="contactLinks">
+          <h3>Contact Links:</h3>
           <ul>
-          <li>This site is dark-mode default. I prefer using dark mode and assume you do, too. You can switch it to light mode here. ##TODO: implement lightmode switch lol</li>
-          <li>This site is built with React and Framer motion. I tried to include some delightful interactions like tooltips and animated page transitions. ##TODO implement tooltips and animated page transitions</li>
+          <li><a href="https://github.com/mackbowes">Github</a></li>
+          <li><a href="https://twitter.com/mackenziepbowes">Twitter</a></li>
+          <li><a href="https://discord.com/users/287285429546385408">Discord</a></li>
           </ul>
           </article>
         </section>

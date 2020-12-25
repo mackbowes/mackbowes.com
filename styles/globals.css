@@ -51,6 +51,17 @@ h2 {
 h3 {
   font-size: 1.5rem;
 }
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 8vmin;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+  h3 {
+    font-size: 1.25rem;
+  }
+}
 p {
   line-height: 1.5rem;
   opacity: 0.75;

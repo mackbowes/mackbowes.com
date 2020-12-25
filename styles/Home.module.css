@@ -145,7 +145,6 @@ section[title="resume"].sectionWrapper {
   line-height: 1.5;
   font-size: 1.25rem;
 }
-
 .flatUl {
   padding-inline-start: 2vmin !important;
   padding-left: 1vmin;
@@ -180,4 +179,9 @@ section[title="resume"].sectionWrapper {
   display: block;
   margin-top: 2.5vmin;
   margin-bottom: 2.5vmin;
+}
+@media only screen and (max-width: 600px) {
+  .ulGrid {
+    grid-template-columns: 1fr !important;
+  }
 }

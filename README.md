@@ -18,7 +18,7 @@ A site all my own.
 - Add github link to '/' page [DONE]
 - Remove 'connect on discord' button & add Twitter, Github, and Discord icons w/ links [IN PROGRESS]
 ### December 25
-- Fix mobile css [DONE]
-- Finish resume [DONE]
-- Add github / discord / twitter links [DONE]
 - figure out tooltips
+- implement accordian components
+  - pass const CONTENT as object prop
+  - create a CONTENT component to store these constants

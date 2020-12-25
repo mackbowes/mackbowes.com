@@ -38,10 +38,24 @@ a {
 a:hover {
   cursor: pointer;
 }
-h2:hover, h3:hover, h4:hover, p:hover, li:hover {
-  cursor: crosshair;
-}
 h1,h2,h3,h4,h5,h6 {
   line-height: 1.25;
   margin: 0;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+p {
+  line-height: 1.5rem;
+  opacity: 0.75;
+  transition: opacity 0.5s ease 0s;
+}
+p:hover {
+  opacity: 1;
 }

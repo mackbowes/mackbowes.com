@@ -23,7 +23,7 @@
 }
 .title:hover {
   box-shadow: var(--deeper-shadow) var(--shade);
-  background-color: hsl(190,6%,20%);
+  background-color: var(--shade);
 }
 .title h1 {
   transition: all .5s ease 0s;
@@ -97,13 +97,13 @@
 }
 .column:hover {
   box-shadow: var(--deeper-shadow) var(--shade);
-  background-color: hsl(190,20%,26%);
+  background-color: var(--shade);
 }
 .column ul li {
   transition: all .5s ease 0s;
 }
 .column ul li:hover {
-  color: hsl(160,46%,66%);
+  color: white;
 }
 .column ul li a:hover {
   cursor: help;
@@ -134,32 +134,43 @@
 section[title="resume"].sectionWrapper {
   grid-template-columns: 1fr;
 }
-section[title="resume"].sectionWrapper p {
-  max-width: 50%;
-  line-height: 2;
+
+.ulGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-inline-start: 0vmin !important;
 }
-section[title="resume"].sectionWrapper h3 {
-  font-size: 3rem;
+.ulGrid li {
   display: block;
-  width: 70vw;
-}
-section[title="resume"].sectionWrapper h4 {
+  line-height: 1.5;
   font-size: 1.25rem;
 }
-section[title="resume"].sectionWrapper .column {
-  width: 90vw;
+
+.flatUl {
+  padding-inline-start: 2vmin !important;
+  padding-left: 1vmin;
+  border-left: 2px solid var(--text);
 }
-@media only screen and (max-width: 900px) {
-  section[title="resume"].sectionWrapper p {
-    max-width: 90%;
-    line-height: 1.25;
-  }
-  section[title="resume"].sectionWrapper h3 {
-    font-size: 2.5rem;
-  }
-  section[title="resume"].sectionWrapper .column {
-    padding: 10vmin 5vmin;
-  }
+.flatUl li {
+  font-size: 1rem;
+}
+
+.resumeBlock {
+  padding-right: 4vmax;
+  margin-bottom: 2.5vmin;
+}
+.resumeBlock h3 {
+  font-size: 1.5rem;
+}
+.resumeBlock h4 {
+  font-size: 1.25rem;
+  opacity: 0.75;
+  margin-bottom: 1.5rem;
+}
+
+.ulGrid p {
+  margin-right: 4vmax;
+  margin-bottom: 2.5vmin;
 }
 
 .resumeHr {

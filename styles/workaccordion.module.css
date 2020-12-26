@@ -1,0 +1,35 @@
+.resumeBlock {
+  padding-right: 4vmax;
+  margin-bottom: 2.5vmin;
+}
+.resumeBlock h3 {
+  font-size: 1.5rem;
+}
+.resumeBlock h4 {
+  font-size: 1.25rem;
+  opacity: 0.75;
+  margin-bottom: 1.5rem;
+}
+.resumeBlock li {
+  display: block;
+  line-height: 1.5;
+  font-size: 1.25rem;
+}
+
+.flatUl {
+  padding-inline-start: 2vmin !important;
+  padding-left: 1vmin;
+  border-left: 2px solid var(--text);
+}
+.flatUl li {
+  font-size: 1rem !important;
+}
+
+.resumeBlock p {
+  margin-right: 4vmax;
+  margin-bottom: 2.5vmin;
+}
+
+.resumeBlock {
+  transition: transform 1.5s ease 0s;
+}

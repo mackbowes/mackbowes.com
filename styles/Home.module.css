@@ -51,7 +51,7 @@
   display: grid;
   align-self: start;
   justify-self: start;
-  padding: 5vmin;
+  padding: 0vmin 5vmin 5vmin 5vmin;
   transition: all .5s ease 0s;
 }
 .column ul li {
@@ -140,9 +140,4 @@ section[title="resume"].sectionWrapper {
   .ulGrid {
     grid-template-columns: 1fr !important;
   }
-}
-
-article[title="contactLinks"].column {
-  align-self: stretch;
-  justify-self: stretch;
 }

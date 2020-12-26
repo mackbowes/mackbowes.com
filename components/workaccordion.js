@@ -14,9 +14,9 @@ class WorkAccordion extends Component {
     (this.state.opacity == 1)
     ? this.setState({ opacity : 0})
     : this.setState({ opacity : 1}),
-    (this.state.height == `100vh`)
+    (this.state.height == `1000vh`)
     ? this.setState({ height : 0})
-    : this.setState({ height : `100vh`})
+    : this.setState({ height : `1000vh`})
   }
   render() {
   return(

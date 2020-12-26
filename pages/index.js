@@ -54,11 +54,17 @@ export default function Home() {
 
           <article className={styles.column} title="contactLinks">
           <h3>Contact Links:</h3>
-          <ul>
-          <li><a href="https://github.com/mackbowes">Github</a></li>
-          <li><a href="https://twitter.com/mackenziepbowes">Twitter</a></li>
-          <li><a href="https://discord.com/users/287285429546385408">Discord</a></li>
-          </ul>
+          <div style={{paddingLeft: `2.5vmin`, borderLeft: `2px solid white`, marginTop: `2.5vmin`}}>
+          <a href="https://github.com/mackbowes">
+          <div style={{display: `block`, padding: `2.5vmin 5vmin`, margin: `0 0 0 0`, backgroundColor: `black`, color: `white`, cursor: `pointer`}}>Github</div>
+          </a>
+          <a href="https://twitter.com/mackenziepbowes">
+          <div style={{display: `block`, padding: `2.5vmin 5vmin`, margin: `2.5vmin 0 0 0`, backgroundColor: `#1DA1F2`, color: `#F5F8FA`, cursor: `pointer`}}>Twitter</div>
+          </a>
+          <a href="https://discord.com/users/287285429546385408">
+          <div style={{display: `block`, padding: `2.5vmin 5vmin`, margin: `2.5vmin 0 0 0`, backgroundColor: `#7289da`, color: `#F5F8FA`, cursor: `pointer`}}>Discord</div>
+          </a>
+          </div>
           </article>
         </section>
         <div className={styles.sectionHr}></div>

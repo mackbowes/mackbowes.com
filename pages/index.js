@@ -132,7 +132,7 @@ export default function Home() {
           <WorkAccordion
           title="Willowbrook Chrysler"
           time="Winter 2018 to Spring 2019"
-          role="Operations (IT, Marketing, HR)"
+          role="Operations"
           highlight1="Delivered 10,000+ leads through digital marketing channels"
           highlight2="Marketing efforts contributed over $1m/mo in revenue"
           highlight3="Developed and implemented 12+ employee management automation systems to reduce friction in onboarding and accelerate sales pipelines"

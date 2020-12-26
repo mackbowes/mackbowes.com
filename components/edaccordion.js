@@ -7,7 +7,8 @@ class EdAccordion extends Component {
     this.handleClick = this.handleClick.bind(this);
     this.state = {
       opacity: 0,
-      height: 0
+      height: 0,
+      visStatus: 'Show'
     }
   }
   handleClick() {
@@ -16,13 +17,18 @@ class EdAccordion extends Component {
     : this.setState({ opacity : 1}),
     (this.state.height == `1000vh`)
     ? this.setState({ height : 0})
-    : this.setState({ height : `1000vh`})
+    : this.setState({ height : `1000vh`}),
+    (this.state.visStatus === 'Show')
+    ? this.setState({ visStatus: 'Hide'})
+    : this.setState({ visStatus: 'Show'})
   }
   render() {
   return(
     <div style={{paddingRight: `5vmin`}}>
       <div onClick={this.handleClick} style={{cursor: `pointer`}}>
-      <h3>{this.props.title}</h3>
+      <h3 style={{display: `inline-block`}}>{this.props.title}</h3>
+      <button style={{margin: `2.5vmin 0vmin 1vmin 2.5vmin`,display: `inline-block`,backgroundColor:`rgba(0,0,0,0)`, color: `var(--text)`, border: `1px solid var(--text)`, padding: `.5vmin 2.5vmin`,opacity: `0.75`}}>
+      {this.state.visStatus} Details</button>
       {(this.props.highlight1)
         ? <h4>{this.props.highlight1}</h4>
         : '' }
@@ -30,6 +36,7 @@ class EdAccordion extends Component {
         ? <h4>{this.props.highlight2}</h4>
         : '' }
       </div>
+
       <div style={{opacity: this.state.opacity, transition: `all 0.25s ease-in-out 0s, transform 0s ease 0.20s`, transformOrigin: `top`, maxHeight: `${this.state.height}`, transform: `scaleX(${this.state.opacity})` }}>
       <p style={{paddingLeft: '2.5vmin'}}>{this.props.about}</p>
       </div>

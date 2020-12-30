@@ -13,12 +13,5 @@ A site all my own.
 ### December 23
 - Create overview pages for /development, /advertising, /design, & /music
 - Supply each overview page with at least 4 pieces of content
-### December 24
-- Add resume to '/' path [DONE]
-- Add github link to '/' page [DONE]
-- Remove 'connect on discord' button & add Twitter, Github, and Discord icons w/ links [IN PROGRESS]
 ### December 25
 - figure out tooltips
-- implement accordian components
-  - pass const CONTENT as object prop
-  - create a CONTENT component to store these constants

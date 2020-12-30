@@ -2,6 +2,16 @@
   padding: 5vmin;
 }
 
+
+.nav {
+  display: flex;
+  padding: 2.5vmin 5vmin;
+  margin-left: 5vmin;
+  margin-right: 5vmin;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /** SPAN Classes **/
 
 .subtle {
@@ -13,8 +23,6 @@
 }
 
 .title {
-  padding: 2.5vmin 5vmin;
-  margin-left: 5vmin;
   display: inline-block;
   transition: all 0.5s ease 0s;
 }

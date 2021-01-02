@@ -1,0 +1,22 @@
+.cardWrapper {
+  padding: 2rem;
+  border: 1px solid var(--text);
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  max-width: 100%;
+}
+
+.image {
+  max-width: 100%;
+}
+
+.cardTitle {
+  line-height: 1;
+  margin-top: 1rem;
+}
+
+.cardBody {
+  line-height: 1;
+}

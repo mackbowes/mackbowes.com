@@ -31,12 +31,10 @@ class Resume extends Component {
     <section title="resume" className={styles.sectionWrapper}>
     <article className={styles.column}>
     <h2>Overview</h2>
-    <p>I deeply enjoy creative expression, problem solving, automation, and increasing efficiency. I work well in teams, yet also have put in the necessary effort to start and complete projects on my own. I also work from an underlying belief that the world around me and history as a wider idea are in constant flux so:</p><h4>shipped is better than perfect.</h4><br/>
-    <p>Shipping an imperfect product simply gives you feedback faster to improve - it's not like I don't like to follow best practices and do good work, it's more that you can't be 100% what your customer base needs until they tell you.</p>
-    <h3>I'm proud of my ability in the following skills:</h3>
+    <p>Deeply enjoys creative expression, problem solving, automation, and increasing efficiency. He works well in teams, yet also have put in the necessary effort to start and complete projects on his own. </p>
+    <h3>Professional ability in the following skills:</h3>
     <ul className={styles.ulGrid}>
       <li>React.js</li>
-      <li>Next.js</li>
       <li>Git</li>
       <li>HTML - CSS - JS - PHP</li>
       <li>Express.js</li>

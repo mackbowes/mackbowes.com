@@ -13,8 +13,8 @@ export default function Home() {
       </Head>
       <Nav />
       <main>
-      <a href="pages/read-n-respond/rnr1-shopify-partner-sales-essentials-day-1"><h3>1: Read N Respond to Shopify Partner Academy Sales Essentials</h3></a>
-      <p>December 29 2020 | Mackenzie Bowes</p>
+        <h2>I'm working on the blog locally for a bit</h2>
+        <h4>Considering headless cms's as well till I get a bit more scratch</h4>
       </main>
     </div>
   )

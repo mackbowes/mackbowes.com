@@ -19,3 +19,7 @@
   border-bottom: 3px solid hsl(230,25%,50%);
   color: hsl(230,15%,75%);
 }
+
+@media only screen and (max-width: 800px) {
+
+}

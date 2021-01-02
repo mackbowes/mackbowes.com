@@ -104,6 +104,14 @@ section[title="resume"].sectionWrapper {
   grid-template-columns: 1fr 1fr;
   padding-inline-start: 0vmin !important;
 }
+
+@media only screen and (max-width: 600px) {
+  .ulGrid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+
 .ulGrid li {
   display: block;
   line-height: 1.5;
@@ -144,8 +152,16 @@ section[title="resume"].sectionWrapper {
   margin-top: 2.5vmin;
   margin-bottom: 2.5vmin;
 }
-@media only screen and (max-width: 600px) {
-  .ulGrid {
-    grid-template-columns: 1fr !important;
-  }
+
+
+.portfolioWrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30%,1fr));
+  grid-template-rows: 1fr;
+}
+
+@media only screen and (max-width: 800px) {
+.portfolioWrapper {
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+}
 }

@@ -151,3 +151,20 @@ section[title="resume"].sectionWrapper {
   grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
 }
 }
+
+.aviWrap {
+  max-width: 250px;
+}
+
+.aviWrap img {
+  border-radius: 10%;
+}
+
+.bioWrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.bioWrap div {
+  margin: 5px;
+}

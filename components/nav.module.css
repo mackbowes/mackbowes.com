@@ -6,4 +6,16 @@
 }
 .blog {
   font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.blog a {
+  padding: 1rem 0 .5rem 0;
+  margin: 0 2rem;
+  border-bottom: 1px solid var(--text);
+}
+
+.blog a:hover {
+  border-bottom: 3px solid hsl(230,25%,50%);
+  color: hsl(230,15%,75%);
 }

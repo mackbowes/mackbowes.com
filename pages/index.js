@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Nav from '../components/nav'
 import Resume from '../components/resume'
-
+import Button from '../components/Button.js';
 import { motion } from "framer-motion"
 import styles from '../styles/Home.module.css'
 
@@ -20,7 +20,8 @@ export default function Home() {
           <h3>hello, nice to meet you.</h3><br />
           <p>my name is mackenzie bowes, you can call me mack, if you like.
           big mac, mac daddy, and daddy mac are also in rotation but I do prefer just 'mack'.<br /></p>
-          <Link href='/resume'><a>View Resume</a></Link>
+          <Link href='/resume'><Button href="/resume" text="View Resume"></Button></Link><br />
+          <Button href="/Portfolio" text="View Portfolio" />
           </article>
           <article className={styles.column} title="contactLinks">
           <h3>Contact Links:</h3>

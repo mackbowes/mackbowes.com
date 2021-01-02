@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Resume from '../components/Resume.js'
+import Resume from '../components/Resume'
 import Nav from '../components/nav'
 import styles from '../styles/Home.module.css'
 

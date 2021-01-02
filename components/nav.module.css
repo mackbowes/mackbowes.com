@@ -1,8 +1,8 @@
 .nav {
   display: flex;
-  padding: 1rem;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 2.5vh;
   --bg: var(--background);
   --bg-accent: rgba(0,0,0,0.75);
   --text: #dadce1;
@@ -16,9 +16,6 @@
   font-size: 2rem;
 }
 
-.logo {
-  padding: 2rem;
-}
 
 .blog {
   font-size: 1.25rem;
@@ -37,7 +34,6 @@
 }
 
 .navBar {
-  padding: 0 1rem;
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -57,25 +53,19 @@
   justify-content: center;
 }
 
-.iconButton {
-  --button-size: calc(var(--nav-size) * 0.5);
-  width: var(--button-size);
-  height: var(--button-size);
-  background-color: var(--bg-accent);
-  border-radius: 50%;
-  padding: 5px;
-  margin: 2px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: filter 300ms;
+.dropdown .navItem {
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px solid var(--text);
 }
+
+
 
 .dropdown {
   position: absolute;
-  right: -25vw;
+  right: -50vw;
   top: 6vh;
-  width: 25vw;
+  width: 50vw;
   transform: translateX(-100%);
   background-color: var(--bg);
   padding: 1rem;
@@ -87,10 +77,10 @@
 }
 
 .menuItem {
-  height: 50px;
+  min-height: 50px;
   display: flex;
   align-items: center;
-  padding: 0.5rem;
+  justify-content: flex-start;
 }
 
 

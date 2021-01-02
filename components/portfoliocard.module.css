@@ -5,18 +5,30 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-  max-width: 100%;
+  max-width: 75vw;
+}
+
+@media screen and (min-width: 801px) {
+  .cardWrapper {
+    max-width: 33%;
+  }
 }
 
 .image {
   max-width: 100%;
+  cursor: pointer;
 }
 
 .cardTitle {
   line-height: 1;
   margin-top: 1rem;
+  font-size: 1.5rem;
+  max-width: 100%;
 }
 
 .cardBody {
   line-height: 1;
+  font-size: 1rem;
+  font-weight: 300;
+  max-width: 600px;
 }

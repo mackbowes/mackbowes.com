@@ -15,35 +15,11 @@ export default function Home() {
       <Nav />
       <div className={styles.portfolioWrapper}>
         <PortfolioCard
-        image="https://via.placeholder.com/800"
-        link="/"
-        alt="Placeholder image"
-        title="Placeholder"
-        body="Placeholder image"
-        />
-        <PortfolioCard
-        image="https://via.placeholder.com/250"
-        alt="Placeholder image"
-        title="Placeholder image"
-        body="Placeholder image"
-        />
-        <PortfolioCard
-        image="https://via.placeholder.com/250"
-        alt="Placeholder image"
-        title="Placeholder image"
-        body="Placeholder image"
-        />
-        <PortfolioCard
-        image="https://via.placeholder.com/500x250"
-        alt="Placeholder image"
-        title="Placeholder image"
-        body="Placeholder image"
-        />
-        <PortfolioCard
-        image="https://via.placeholder.com/250"
-        alt="Placeholder image"
-        title="Placeholder image"
-        body="Placeholder image"
+        image="/RSD-portfolio.png"
+        link="http://realsupport.digital"
+        alt="Realsupport.digital project image"
+        title="Realsupport.digital marketing site [WIP]"
+        body="RealSupport.digital (RS.D) is a service startup for the real estate industry. Eventually, I'm going to integrate the API's for Stripe to manage payments and automatically route orders to some sort of Print on Demand API."
         />
       </div>
     </div>

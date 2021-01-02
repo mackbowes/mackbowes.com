@@ -26,7 +26,7 @@ function Nav() {
 
 function Navbar(props) {
   return(
-    <nav className={styles.navBar}>
+    <nav className={styles.navBar} id="top">
       <div>
         <h1 className={styles.title}>
         <a href="/">mackbowes.com</a>

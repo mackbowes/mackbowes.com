@@ -7,8 +7,12 @@ import styles from '../styles/Home.module.css'
 export default function ResumePage() {
   return (
     <div className={styles.container}>
-    <Nav />
-    <Resume />
+      <Head>
+        <title>Resume | Mack Bowes</title>
+        <link rel="icon" href="/mlogo.svg" />
+      </Head>
+      <Nav />
+      <Resume />
     </div>
   )
 }

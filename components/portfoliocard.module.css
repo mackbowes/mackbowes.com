@@ -2,20 +2,25 @@
   padding: 2rem;
   border: 1px solid var(--text);
   margin: 2rem;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
+  display: flex;
+  flex-wrap: wrap;
   max-width: 75vw;
+  align-items: flex-start;
+  justify-items: stretch;
+  
+  box-shadow: 0px 5px 5px rgba(0,0,0,0.75);
 }
 
 @media screen and (min-width: 801px) {
   .cardWrapper {
-    max-width: 33%;
+    max-width: 30vw;
+    justify-self: center;
   }
 }
 
 .image {
   max-width: 100%;
+  justify-self: stretch;
   cursor: pointer;
 }
 

@@ -11,7 +11,10 @@ export default function PortfolioCard(props) {
       <div>
       <h2 className={styles.cardTitle}>{props.title}</h2>
       <p className={styles.cardBody}>{props.body}</p>
-      <Button href="https://github.com/mackbowes/rsd" text="View on Github" />
+      {(props.gitHub)
+      ? <Button href={props.gitHub} text={props.gitHubText} />
+      : ''}
+      
       </div>
     </div>
   )

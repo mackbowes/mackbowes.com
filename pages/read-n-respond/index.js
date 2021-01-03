@@ -9,7 +9,7 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>mack bowes</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/mlogo.svg" />
       </Head>
       <Nav />
       <main>

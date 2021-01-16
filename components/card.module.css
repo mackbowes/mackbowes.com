@@ -3,7 +3,7 @@
   display: block;
   box-sizing: border-box;
   min-width: 50%;
-  max-width: 50%;
+  max-width: 60vw;
   text-align: left;
   min-height: 10vh;
   margin: 1rem 0;
@@ -14,8 +14,8 @@
 
 @media screen and (max-width: 1080px) {
   .card {
-    max-width: 90%;
-    padding: 3rem 1rem;
+    max-width: 80vw;
+    padding: 3rem 2rem;
   }
 }
 

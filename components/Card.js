@@ -4,9 +4,15 @@ import styles from './card.module.css';
 export default function Card(props) {
 
     const [show, setShow] = useState(false);
+    const [buttonContent, setButtonContent] = useState('read more');
 
     const handleClick = e => {
         setShow(!show);
+        if (buttonContent === 'read more') {
+            setButtonContent('read less');
+        } else {
+            setButtonContent('read more');
+        }
     }
 
     const children = show => {
@@ -25,7 +31,7 @@ export default function Card(props) {
         <div className={styles.cardContent}>
           {children(show)}
         </div>
-        <button className={styles.cardButton} onClick={handleClick}>read more</button>
+        <button className={styles.cardButton} onClick={handleClick}>{buttonContent}</button>
         </article>
 
     )

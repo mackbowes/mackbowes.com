@@ -82,7 +82,46 @@ export default function Home() {
           <p>It'd be nice to get a partner again if the right person comes along. It's now been 18 months since I broke up with my fiance which is about half the duration of that relationship, and I think i'm ready for something new :)</p>
         </Card>
       </main>
-      <footer>
+      <footer style={{
+        display: `flex`,
+        flexDirection: `row`,
+        overflowY: `scroll`,
+      }}>
+        <code style={{
+          fontFamily: `monospace`,
+          whiteSpace: `pre`,
+          margin: `0 auto`,
+        }}>
+          &nbsp;       |\      _,,,---,,_<br />
+          &nbsp; ZZZzz /,`.-'`'    -.  ;-;;,_<br />
+          &nbsp;      |,4-  ) )-,_. ,\ (  `'-'<br />
+          &nbsp;     '---''(_/--'  `-'\_)<br />
+          &nbsp;                                         
+        </code>
+        <code style={{
+          fontFamily: `monospace`,
+          whiteSpace: `pre`,
+          margin: `0 auto`,
+          color: `#d166a8`,
+        }}>
+          &nbsp;       |\      _,,,---,,_<br />
+          &nbsp; ZZZzz /,`.-'`'    -.  ;-;;,_<br />
+          &nbsp;      |,4-  ) )-,_. ,\ (  `'-'<br />
+          &nbsp;     '---''(_/--'  `-'\_)<br />
+          &nbsp;                                         
+        </code>
+        <code style={{
+          fontFamily: `monospace`,
+          whiteSpace: `pre`,
+          margin: `0 auto`,
+          color: `#d19f1f`
+        }}>
+          &nbsp;       |\      _,,,---,,_<br />
+          &nbsp; ZZZzz /,`.-'`'    -.  ;-;;,_<br />
+          &nbsp;      |,4-  ) )-,_. ,\ (  `'-'<br />
+          &nbsp;     '---''(_/--'  `-'\_)<br />
+          &nbsp;                                         
+        </code>
       </footer>
     </div>
   )

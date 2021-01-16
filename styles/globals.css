@@ -1,13 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300;400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300;400;600&display=swap");
+
+@font-face {
+  font-family: BPDotsSquare;
+  src: url("/fonts/BPdotsSquareBold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: BPDotsDiamonds;
+  src: url("/fonts/BPdotsDiamondBold.otf") format("opentype");
+}
 
 :root {
-    --background: #3b444b;
-    --text: #d7d9db;
-    --shade: #171b1e;
-    --tint: #757c81;
-    --box-shadow: 4px 4px 0 0;
-    --deeper-shadow: 8px 8px 0 0;
-    font-size: 22px;
+  --background: #000201;
+  --text: #41c7ce;
+  --box-shadow: 4px 4px 0 0;
+  --deeper-shadow: 8px 8px 0 0;
+  font-size: 22px;
 }
 
 @media only screen and (max-width: 800px) {
@@ -29,7 +37,8 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Source Serif Pro', serif;
+  font-family: "BPDotsDiamonds", serif;
+  background-image: radial-gradient(var(--background), rgba(20, 24, 22, 1));
   background-color: var(--background);
   color: var(--text);
   overflow-x: hidden;
@@ -42,9 +51,9 @@ body {
 }
 
 @media screen and (min-width: 850px) {
- body {
-   padding: 4vh 4vw;
- }
+  body {
+    padding: 4vh 4vw;
+  }
 }
 a {
   color: inherit;
@@ -56,14 +65,18 @@ a {
 }
 
 *:hover {
-  cursor:default;
+  cursor: default;
 }
 a:hover {
   cursor: pointer;
-  color: var(--tint);
   transition: all 0.5s ease 0s;
 }
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   line-height: 1.25;
   margin: 0;
 }
@@ -88,10 +101,5 @@ h3 {
   }
 }
 p {
-  line-height: 1.5rem;
-  opacity: 0.75;
-  transition: opacity 0.5s ease 0s;
-}
-p:hover {
-  opacity: 1;
+  /* line-height: 1.5rem; */
 }

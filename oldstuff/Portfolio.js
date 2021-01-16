@@ -11,6 +11,7 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>Portfolio | Mack Bowes</title>
+        <link rel="icon" href="/mlogo.svg" />
       </Head>
       <Nav />
       <div className={styles.portfolioWrapper}>

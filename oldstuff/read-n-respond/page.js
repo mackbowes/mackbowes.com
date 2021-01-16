@@ -1,5 +1,5 @@
 import React from 'react';
-import Nav from '../../components/nav';
+import Nav from '../components/nav';
 import styles from './page.module.css';
 
 export default function Page({children}) {

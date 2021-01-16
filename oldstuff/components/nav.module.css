@@ -3,8 +3,9 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 2.5vh;
+  font-family: BPDotsSquare;
   --bg: var(--background);
-  --bg-accent: rgba(0,0,0,0.75);
+  --bg-accent: rgba(0, 0, 0, 0.75);
   --text: #dadce1;
   --nav-size: 60px;
   --border: 1px solid #474a4d;
@@ -16,21 +17,19 @@
   font-size: 2rem;
 }
 
-
 .blog {
   font-size: 1.25rem;
   padding: 1rem;
 }
 
 .blog a {
-  padding: 1rem 0 .5rem 0;
+  padding: 1rem 0 0.5rem 0;
   margin: 0 2rem;
   border-bottom: 1px solid var(--text);
 }
 
 .blog a:hover {
-  border-bottom: 3px solid hsl(230,25%,50%);
-  color: hsl(230,15%,75%);
+  border-bottom: 3px solid hsl(230, 25%, 50%);
 }
 
 .navBar {
@@ -51,6 +50,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.navItem:hover {
+  transform: translateY(-8px);
 }
 
 .dropdown .navItem {
@@ -58,8 +62,6 @@
   margin: 0;
   border-bottom: 1px solid var(--text);
 }
-
-
 
 .dropdown {
   position: absolute;
@@ -83,9 +85,8 @@
   justify-content: flex-start;
 }
 
-
 .menuItem:hover {
-  background-color: #525357;
+  transform: translateY(-4px);
 }
 
 .iconRight {
@@ -95,4 +96,3 @@
 .iconButton:hover {
   filter: brightness(1.2);
 }
-

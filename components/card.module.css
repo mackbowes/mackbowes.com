@@ -15,6 +15,7 @@
 @media screen and (max-width: 1080px) {
   .card {
     max-width: 90%;
+    padding: 3rem 1rem;
   }
 }
 
@@ -35,8 +36,15 @@
   letter-spacing: 5px;
   text-transform: uppercase;
   color: #d166a8;
-  line-height: 1.25;
+  line-height: 1.5;
 }
+
+/* @media screen and (max-width: 800px) {
+  .card .cardTitle {
+    margin-top: 2rem;
+    padding-top: 3rem;
+  }
+} */
 
 .card .cardTitle:hover {
   color: #d19f1f;

@@ -18,8 +18,8 @@ export default function Home() {
         <h2>development / marketing / start-up stuff</h2>
         <div style={{display: `block`, alignSelf: `center`, textAlign: `center`,}}>
           <a href="https://github.com/mackbowes" target="_blank">github</a>{' '}
-          <a href="https://twitter.com/mackenziepbowes">twitter</a>{' '}
-          <a href="https://go.tinder.com/KUbZnmACVMo-big%20mac">tinder</a>
+          <a href="https://twitter.com/mackenziepbowes" target="_blank">twitter</a>{' '}
+          <a href="https://go.tinder.com/KUbZnmACVMo-big%20mac" target="_blank">tinder</a>
         </div>
         </div>
       </header>

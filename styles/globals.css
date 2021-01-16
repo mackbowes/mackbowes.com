@@ -103,3 +103,11 @@ h3 {
 p {
   /* line-height: 1.5rem; */
 }
+
+li > a {
+  color: #d166a8;
+}
+li > a:hover {
+  color: #d19f1f;
+  cursor: pointer;
+}

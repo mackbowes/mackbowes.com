@@ -1,5 +1,7 @@
 import Head from 'next/head';
+import { Link } from 'react-router-dom';
 import Card from '../components/Card';
+import IL from '../components/InlineLink';
 import styles from '../styles/home.module.css';
 
 export default function Home() {
@@ -81,10 +83,80 @@ export default function Home() {
           <p>famous fat guy words, of course.</p>
           <p>It'd be nice to get a partner again if the right person comes along. It's now been 18 months since I broke up with my fiance which is about half the duration of that relationship, and I think i'm ready for something new :)</p>
         </Card>
+        <Card
+        title="RSS Roundup 1"
+        info="january 16 2021 / mack bowes / dev stuff">
+          <p>In an effort to stay consistent with my writing, I'm launching a new series of reading and summarizing the coolest things I saw in my rss feed on any given morning.<br />
+          Today, we're looking at the breadth and depth of big g's cyber barony, a new client-side js framework, economics of coding, and automated atomic CSS.</p>
+          <p>this has the added benefit of crystallizing the information consumed and increasing the likelihood that the content can be used in active recall for future problem solving... as well as being searchable by future mac.</p>
+          <p>So... the cool things I saw today</p>
+          <ul>
+            <li>
+              <IL href="https://mithril.js.org/" tooltip="mithril.js documentation">mithril.js</IL>, a tiny modern client-side JavaScript framework for building Single Page Applications.
+            <ul>
+              <li>Additionally, it provides routing and XHR out of the box... I don't know what XHR is right now but I'll look it up soon.</li>
+              <li>The routing is cool, usually you have to add a package like react-router-dom or vue-router.</li>
+              <li>This is really cool because it has an average response speed of 6.4ms compared to react's 12.1ms - twice as fast (and react is already b&nbsp;l&nbsp;a&nbsp;z&nbsp;i&nbsp;n&nbsp;g.)</li>
+            </ul>
+            </li>
+            <li><IL href="https://gomox.medium.com/google-safe-browsing-can-kill-your-startup-7d73c474b98d" tooltip="a medium article by Gonzalo Sainz Trápaga">This horror story</IL> in a saas startup's interaction with big g's automated 'user-protecting' blacklist feature called <IL href="https://en.wikipedia.org/wiki/Google_Safe_Browsing" tooltip="GSB's wikipedia page">Google Safe Browsing.</IL>
+            <ul>
+              <li>This is extra cool for reasons we'll see in the next summary</li>
+              <li>IT Ticketing System starts showing a super scary red page with security warnings to users</li>
+              <li>Support gets flooded, customers think their entire network has been hacked</li>
+              <li>Turns out the issue was one subdomain got flagged by an AI at big g</li>
+              <li>Once the issue was discovered, it was resolved in 2 hours</li>
+              <li>The spooky part: g never revealed why the subdomain was flagged.</li>
+              <li>Basically, it's a cautionary tale in saas architecture. X-post under /startup-stuff.</li>
+              <li>New best practices: business stuff goes on domain.com, app stuff goes on app.domain.net, subdomain domain.net by region ie EW customers get eurowest.domain.net</li>
+              <li>Also, try your best not to play in other peoples sandboxes because you will piss yourself and it will get ugly.</li>
+            </ul>
+            </li>
+            <li>
+              So we just saw the scary behemoth side of big g with a chilling visual of a corporate ai so big that it could destroy the livelihoods of you and everyone you know by accident and not notice... at the same time that g's new <IL href="https://jigsaw.google.com/" tooltip="jigsaw by google">jigsaw initiative</IL> won an <IL href="https://www.awwwards.com/" tooltip="The awwwards website">awwward</IL> for their <IL href="https://jigsaw.google.com/the-current/white-supremacy/" tooltip="The Current / White Supremacy on jigsaw.google.com">newest article</IL>.
+              <ul>
+                <li>no cap the site is well designed - crystal clear hierarchy, content-forward, delightful ui interactions, and advanced ui tech like a fluid clip-path on hover... definitely play with the site on desktop</li>
+                <li>I just think it's funny how g is this giganormous automated machine that can accidentally shut down million dollar a year businesses without noticing but pretends it's their job to protect the little guy</li>
+                <li>biiiiig <IL href="https://locusmag.com/2021/01/cory-doctorow-neofeudalism-and-the-digital-manor/" tooltip="Neofeudalism and the Digital Manor by Cory Doctorow, Jan 4, 2021">feudalist / manorialist</IL> vibes here, with g essentially saying "I am here to protect you, I'm the only one you can trust to protect you, and I do my best to make sure your life is pleasant and worth while" on the one hand, with a hanging sword of "but if you fuck with me you are <span className={styles.wide}>dead meat</span>..." without clear or responsive guidelines on what is or isn't 'fucking with them.'</li>
+              </ul>
+            </li>
+            <li>That's probably enough 'punk' for one day, let's get back to 'cyber' stuff and discuss <IL href="https://css-tricks.com/on-auto-generated-atomic-css/" tooltip="On Auto-Generated Atomic CSS by Chris Coyier, Jan 15, 2021">automated atomic css.</IL>
+              <ul>
+                <li>Atomic Css is just cool. Everyone, although this will probably change soon, learns 'semantic' web development when they're getting started.</li>
+                <li>Semantic CSS is great for sharing codebases - naming your class 'hero-title' leaves little question about where the class appears and is meant to be implemented.</li>
+                <li>If you're not familiar, atomic css uses a 1:1 map of property/value pairs to class names. eg: .mt-8 would contain 'margin-top: 8px'</li>
+                <li>generally, you'd pull from a library that contains a <span className={styles.wide}>bunch</span> of such classes, pick and choose what you need to build your UI, then use a compiler to remove any unused classes to deliver super tiny, super clean, super fast css to the client.</li>
+                <li>there's tension here, obviously: reading css like 'hero-title' is just way easier than reading css like 'mt-8'... so you have to trade one for the other, right?</li>
+                <li>Well, no. The hard work of translating semantic classes to atomic css is a problem that has been solved by 
+                  <ul>
+                    <li><IL href="https://fela.js.org/" tooltip="Fela's homepage">Fela</IL></li>
+                  <li><IL href="https://www.styletron.org/" tooltip="Styletron's homepage">Styletron</IL></li>
+                  <li><IL href="https://necolas.github.io/react-native-web/docs/?path=/docs/overview-getting-started--page" tooltip="a Storybook for React Native Web">React Native Web</IL></li>
+                  <li><IL href="https://github.com/kripod/otion" tooltip="Otion's github repo">otion</IL></li>
+                  <li><IL href="https://github.com/giuseppeg/style-sheet" tooltip="StyleSheet's github repo">stylesheet</IL></li>
+                  </ul>
+                </li>
+                <li>and they all deserve a little exploration over time.</li>
+              </ul>
+            </li>
+            <li>Finally, code economics. <IL href="https://danielbmarkham.com/code-budgets/" tooltip="Daniel B. Markham's site">Daniel B. Markham</IL> explored the economics of code and programming on january 7, and I thought it was a neat little analysis. Here are the concepts, quickly:</li>
+            <ul>
+              <li>what does a line of code cost? the time it takes to write? the man-hours that went into it's design, preparation, training, etc etc?</li>
+              <li>what is a line of code worth? all the money an app makes in a month / total lines of code? the value of the application to the end user?</li>
+              <li>daniel posits that the cost of a line of code grows without bound - it can be poked, prodded, massaged, refactored, rewritten, and so on repeatedly by different engineers ad nauseum &amp; ad infinitum. I agree, that makes sense.</li>
+              <li>he also posits that the worth of a line of code is static - once a line of code works in an application to solve a user's issue, further prodding does not increase the value. I somewhat disagree - a line can certainly be refactored to improve speed (yet, not forever) or to remove confusing side effects (yet, not forever).</li>
+              <li>from this line of reasoning he posits that engineers and product managers should attempt to enforce budgets on their applications and we should explore minmaxing the relationship of lines of code to produced value.</li>
+              <li>this is kind of an industry trend, we're seeing a rise of investing into 'no-code' services like bubble and webflow, both of which are sucky to use yet their creators are millionaires, which seeks to minmax the time and labour cost (via reducing the required user expertise) it takes to produce softwares that solve a user issue.</li>
+              </ul>
+          </ul>
+          <p>the 21st century theme of automation (oft violently) replacing labour, and the surplus value of automation going directly to monolithic corporations rather than the labourers whose labour is being replaced, continue at an accelerating pace. it's highly troubling.</p>
+        </Card>
       </main>
       <footer style={{
         display: `flex`,
         flexDirection: `row`,
+        justifyContent: `center`,
+        alignContent: `center`,
         overflowY: `scroll`,
       }}>
         <code style={{

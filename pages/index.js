@@ -155,8 +155,6 @@ export default function Home() {
       <footer style={{
         display: `flex`,
         flexDirection: `row`,
-        justifyContent: `center`,
-        alignContent: `center`,
         overflowY: `scroll`,
       }}>
         <code style={{

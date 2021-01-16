@@ -99,6 +99,14 @@ h3 {
   h3 {
     font-size: 1.25rem;
   }
+
+  li {
+    padding: 1rem 0;
+  }
+
+  ul {
+    padding-inline-start: 1.5rem;
+  }
 }
 p {
   /* line-height: 1.5rem; */

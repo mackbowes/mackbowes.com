@@ -151,6 +151,51 @@ export default function Home() {
           </ul>
           <p>the 21st century theme of automation (oft violently) replacing labour, and the surplus value of automation going directly to monolithic corporations rather than the labourers whose labour is being replaced, continue at an accelerating pace. it's highly troubling.</p>
         </Card>
+        <Card
+        title="RSS Round Up 2"
+        info="january 17 2021 / mack bowes / cool stuff">
+          <p>In this edition of yesterday's news today, I'm going to tell you about some really cool stuff I found. The theme of the day is decidedly more optimistic than yesterday with about 80% less existential anxiety. We'll be talking about mnm, an open-source 10x secure replacement for the SMTP protocol, New York's plans to retrofit old developments for new uses, Veblen Goods, and remoteclub.com.</p>
+          <ul>
+            <li><IL href="https://mnmnotmail.org/" tooltip="mnm's project site">mnm is not mail,</IL> but an open source legitimate email replacement design for everyone, but especially organizations that require:
+            <ul>
+              <li>security because a successful phishing attack would be catastrophic and rely on internal email (i.e. every damn body)</li>
+              <li>people interacting with sites that discuss sensitive information (legal affairs, health care, job search, family stuff) that don't want their email scanned by big g, michealsoft, et cetera and so on. (once again, that's everybody.)</li>
+            </ul>  
+            It also provides a ton of new features that are bizarrely missing from traditional email like inline forms, data-driven charts (instead of images)[this is in development], slide decks, hashtagging, hyperlinking to other messages, markdown formatting, and more. It's open source! Sky's the limit!<br />
+            <ul>
+              <li>You could probably build a solid career out of learning this technology and setting it up for corps.</li>
+              <li>I see this technology being leveraged by SaaS startups very soon - could be me, could be you, but this tech is definitely work that needs doing and a very exciting development.</li>
+            </ul>
+            </li>
+            <li><IL href="https://www.ny-engineers.com/blog/adaptive-reuse-financial-feasibility-for-developers" tooltip="Adaptive Reuse: Financial feasibility for developers by Micheal Tobias, January 15, 20201">Adaptive Reuse</IL> is the current chatter in MEP world, and for good reason. Even without the pandemic, our society was trending towards demand patterns discussed in the article - remote work means less travel means less demand for offices and hotels while at exactly the same time demand for apartment space is rising. A fella needs a seperate room for his home office for psychology purposes.<br />
+            <br />This discussion comes on the heels of ny Governor Cuomo proposing a 5 Year plan (interesting name) to support adaptive resuse initiatives in the state of new york, especially focused in nyc.<br /><br />
+            The article discusses demand levels for different building types and mentions the following:
+            <ul>
+              <li>Commercial demand is down</li>
+              <li>Demand for apartments is rising</li>
+              <li>demand for warehousing is rising</li>
+              <li>demand for mixed-use (ie <IL href="https://en.wikipedia.org/wiki/Vancouverism" tooltip="Vancouverism urban planning on Wikipedia">vancouverism</IL>) is rising</li>
+              <li>industrial real estate is in high demand (this is tremendous news!)</li>
+              <li>healthcare space is in high demand (duh - however, this is not a long term demand as vaccines roll out)</li>
+              <li>data center space is in high demand</li>
+            </ul>
+            mixed-use vancouverism is a terrific urban planning policy, which I know because I live near vancouver and it is a lovely place to visit despite the lower east side feeling like level from Doom. live work play communities provide a high quality of living for inhabitants and do allow for higher rents not only in that community, but in nearby communities that are accessible by public transit. <br /><br />
+            Personally, I noticed that retail space was missing from this discussion. retail spaces have been trying to juggle two very different parts of the supply chain and sales cycle - they demonstrate their brand's products and warehouse their brand's products. I believe that trying to do both is increasingly becoming unsustainable, and many of these placements need to focus on one or the other. I'd love to see more <IL href="https://www.museumoficecream.com/" tooltip="The Legendary Museum of Ice Cream">Museum of Ice Cream</IL> style interactive experiences that help consumers emotionally connect with product in ways that are impossible when mediated through a web browser, a paradigm that falls directly into the 'mixed use' development strategy. 
+            </li>
+          <li><IL href="https://en.wikipedia.org/wiki/Veblen_good" tooltip="Veblen Good on Wikipedia">Veblen Goods</IL> is a new-to-me handle for an observed and somewhat unintuitive economic phenomenon / consumer behaviour. This is the name for luxury goods for which demand for that good rises as the price increases - in apparent contradiction to the law of demand.<br/>
+          This is what <IL href="https://en.wikipedia.org/wiki/Virgil_Abloh" tooltip="Virgil Abloh's biography on Wikipedia">Virgil Abloh</IL> was discussing when he tweeted that 'design is the freshest scam' all those long years ago. x-post under 'marketing stuff'. related concepts &amp; further reading:
+          <ul>
+            <li><IL href="https://en.wikipedia.org/wiki/Snob_effect" tooltip="The Snob Effect on Wikipedia">The snob effect</IL>, a phenomenon in microeconomics where demand for a good by individuals of a higher income is inversely related to its demand by those at a lower income level. The phenomenon comes from the desire (and concurrant ability) to own unusual, expensive, or unique goods.</li>
+            <li><IL href="https://en.wikipedia.org/wiki/Common_law_of_business_balance" tooltip="Common law of business balance on Wikipedia">The common law of business balance</IL>, usually expressed as 'you get what you pay for,' or the idea that cheap prices indicate poor quality.</li>
+            <li><IL href="https://en.wikipedia.org/wiki/Hot_hand" tooltip="'Hot Hand' on wikipedia">The hot hand 'fallacy'</IL>, which I learned today is no longer considered a fallacy after some fancy-schmancy statistical analysis. It was originally observed in sports, particularly basketball, where a player who had just successfully completed a shot on net was rated as more likely to succeed in his next attempt. While it may be true in sports, it's definitely a cognitive bias that is preyed upon in gambling activities like blackjack, roulette, and stock picking (finance bros btfo.) as related to veblen goods, this idea is used as evidence to support a consumers agreement that an expensive product is expensive because it's in high demand.</li>
+            <li>Harvey Leibenstein's <IL href="https://www.jstor.org/stable/1882692?seq=1" tooltip="Bandwagon, Snob, and Veblen Effects in the Theory of Consumers' Demand by H. Leibenstien on J Stor, May 1950">'Bandwagon, Snob, and Veblen Effects in the Theory of Consumers' Demand'</IL>, a super serious and definitely scientific treatise of the idea.</li>
+            <li><IL href="https://en.wikipedia.org/wiki/Giffen_good" tooltip="Giffen Good on Wikipedia">Giffen Goods</IL>, the theoretical inverse of Veblen Goods where increases in price increase demand in inferior goods. A good example is to imagine someone who eats inferior staples like white bread and supplements with the occaisonal normal good like veg. If the price of bread rises, they purchase more bread because they can't afford all of their normal diet.</li>
+          </ul>
+          </li>
+          <li><IL href="https://remoteclub.com/" tooltip="Remote Club's Site">remote club</IL>, just a fun little resource for anyone who works remote like me to explore moving to different parts of the world.</li>
+          </ul>
+          <p>I really need to figure out a CMS, typing all this out in jsx is a dangerous game.</p>
+        </Card>
       </main>
       <footer style={{
         display: `flex`,

@@ -214,8 +214,8 @@ export default function Home() {
           <ul>
             <li>The Fediverse, or more specifically <IL href="https://slashdev.space/posts/2021-01-18-reasons-the-fediverse-is-better" tooltip="6 Reasons the Fediverse is better than regular social media on slashdev.space">6 reasons it's better than regular social media.</IL>
             <ul>
-              <li>The fediverse is an inclusive term for open, distributed social media platforms like <IL href="https://joinmastodon.org/">mastodon,</IL> basically twitter, <IL href="https://peer.tube/" tooltip="peer tube">peer.tube</IL>, basically youtube, and <IL href="https://pixelfed.org/" tooltip="Pixelfed.org">pixelfed</IL> for the people who love IG.</li>
-              <li>Notably didn't mention a twitter clone which could be a cool project.</li>
+              <li>The fediverse is an inclusive term for open, distributed social media platforms like <IL href="https://joinmastodon.org/">mastodon</IL>, basically twitter, <IL href="https://peer.tube/" tooltip="peer tube">peer.tube</IL>, basically youtube, and <IL href="https://pixelfed.org/" tooltip="Pixelfed.org">pixelfed</IL> for the people who love IG.</li>
+              <li>Notably didn't mention a tiktok clone which could be a cool project.</li>
               <li>These services are decentralized which is a big idea in the moment with the fricken president of the united states getting bounced from the internet. no cap he's a racist shit bag that attempted to overthrow 'democracy', but people are just hyper aware of twitter et al.'s ability to bounce them.</li>
             </ul>
             </li>

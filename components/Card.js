@@ -8,6 +8,10 @@ export default function Card(props) {
     const [style, setStyle] = useState({  scrollbarWidth: `none`,
         scrollbarColor: `var(--text) #d166a8`, height: `100%`})
 
+    const doNothing = e => {
+        e.preventDefault();
+    }
+
     const handleClick = e => {
         setShow(!show);
         if (buttonContent === 'read more') {
@@ -38,7 +42,7 @@ export default function Card(props) {
           {children(show)}
         </div>
         <button className={styles.cardButton} onClick={handleClick}>{buttonContent}</button>
-        <img src="/images/card-bottom-01.png" className={styles.bottomimg} />
+        <img onClick={doNothing} onContextMenu={doNothing} src="/images/card-bottom-01.png" className={styles.bottomimg} />
         </article>
 
     )

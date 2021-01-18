@@ -207,6 +207,34 @@ export default function Home() {
           </ul>
           <p>I really need to figure out a CMS, typing all this out in jsx is a dangerous game.</p>
         </Card>
+        <Card
+        title="rss roundup 3"
+        info="january 18 2021 / mack bowes / cool stuff">
+          <p>I have that first day of work at that new react job today! Very exciting stuff. The RSS feeds were less exciting, but there was still some cool stuff that we can look at.</p>
+          <ul>
+            <li>The Fediverse, or more specifically <IL href="https://slashdev.space/posts/2021-01-18-reasons-the-fediverse-is-better" tooltip="6 Reasons the Fediverse is better than regular social media on slashdev.space">6 reasons it's better than regular social media.</IL>
+            <ul>
+              <li>The fediverse is an inclusive term for open, distributed social media platforms like <IL href="https://joinmastodon.org/">mastodon,</IL> basically twitter, <IL href="https://peer.tube/" tooltip="peer tube">peer.tube</IL>, basically youtube, and <IL href="https://pixelfed.org/" tooltip="Pixelfed.org">pixelfed</IL> for the people who love IG.</li>
+              <li>Notably didn't mention a twitter clone which could be a cool project.</li>
+              <li>These services are decentralized which is a big idea in the moment with the fricken president of the united states getting bounced from the internet. no cap he's a racist shit bag that attempted to overthrow 'democracy', but people are just hyper aware of twitter et al.'s ability to bounce them.</li>
+            </ul>
+            </li>
+            <li><IL href="https://www.eleuther.ai/gpt-neo" tooltip="GPT-Neo's product description">GPT-Neo</IL>, a Free and Open Source AI thingy. 'a series of transformer-based language models loosely styled around the GPT architecture that we plan to train and open source.'
+              <ul>
+                <li>x-post under startup stuff - i've seen chatter about conversational design trending, with organizations looking for ways to minimize costs on customer support, business development, sales, etc. etc.</li>
+                <li>natural language processing, chat bots et al, are the key to fulfilling that demand.</li>
+              </ul>
+            </li>
+            <li>A way to <IL href="https://thinkingthrough.substack.com/p/context-switching-cost-more-than" tooltip="Context Switching costs more than we give it credit for by Mayank Verma on Substack">minimize context-switching costs</IL>
+            <ul>
+              <li>Context switching is a term for the cognitive load of switching between different types of tasks</li>
+              <li>something to be avoided if you're working on difficult things because difficult things require a tremendous cognitive load to begin with</li>
+              <li>further evidence for employing a cal newport style time blocking system to get hard shit done</li>
+              <li>x-post under startup stuff - engineers would probably go for an application that blocks pings and notifications that encourage rapid context switching</li>
+            </ul>
+            </li>
+          </ul>
+        </Card>
       </main>
       <footer style={{
         display: `flex`,

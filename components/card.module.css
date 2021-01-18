@@ -93,6 +93,19 @@
   cursor: pointer;
 }
 
+.bottomimg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 800px) {
+  .bottomimg {
+    width: 100vw;
+  }
+}
+
 @keyframes shake {
   0% {
     transform: translateX(0px);

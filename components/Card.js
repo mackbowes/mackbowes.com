@@ -38,6 +38,7 @@ export default function Card(props) {
           {children(show)}
         </div>
         <button className={styles.cardButton} onClick={handleClick}>{buttonContent}</button>
+        <img src="/images/card-bottom-01.png" className={styles.bottomimg} />
         </article>
 
     )

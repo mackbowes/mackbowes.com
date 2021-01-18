@@ -1,3 +1,4 @@
+import {useState} from 'react';
 import Head from 'next/head';
 import { Link } from 'react-router-dom';
 import Card from '../components/Card';
@@ -6,7 +7,14 @@ import styles from '../styles/home.module.css';
 
 export default function Home() {
 
+  const [alertStyle, setAlert] = useState({display: `none`});
 
+  const giveEmail = e => {
+    e.preventDefault();
+    navigator.clipboard.writeText('mackbowes@pm.me');
+    setAlert({display: `block`, textAlign: `center`});
+    setTimeout(setAlert, 2500,{display: `none`});
+  }
 
   return (
     <div>
@@ -18,11 +26,14 @@ export default function Home() {
         <div>
         <h1>mack bowes</h1>
         <h2>development / marketing / start-up stuff</h2>
+        
         <div style={{display: `block`, alignSelf: `center`, textAlign: `center`,}}>
           <a href="https://github.com/mackbowes" target="_blank">github</a>{' '}
           <a href="https://twitter.com/mackenziepbowes" target="_blank">twitter</a>{' '}
           <a href="https://go.tinder.com/KUbZnmACVMo-big%20mac" target="_blank">tinder</a>
         </div>
+        <h3><a href="mailto:mackbowes@pm.me" target="_blank" onClick={giveEmail}>mackbowes@pm.me</a></h3>
+        <p style={alertStyle}>email address copied to clipboard</p>
         </div>
       </header>
       <main className={styles.main}>

@@ -60,6 +60,8 @@
   overflow-y: scroll;
   cursor: ns-resize;
   text-transform: lowercase;
+  transition: all 0.25s linear;
+  padding-right: 1rem;
 }
 
 .card .cardContent p {

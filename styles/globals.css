@@ -33,6 +33,10 @@
   display: none;
 }
 
+* {
+  scrollbar-width: none;
+}
+
 html,
 body {
   padding: 0;

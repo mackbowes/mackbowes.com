@@ -1,0 +1,125 @@
+.blogWrap {
+  margin-left: 5vw;
+  margin-top: 5vh;
+  cursor: default;
+  code {
+    padding: 0 4px;
+    background-color: #5d4c3c;
+    color: #cacaca;
+  }
+}
+
+.title {
+  font-size: calc(1.5rem + 3vw);
+  line-height: 1.33;
+}
+
+.section {
+  max-width: clamp(25ch, 66ch, 90vw);
+  font-size: 115%;
+  opacity: 0.85;
+  > p {
+    margin: 0 0 4ex 0;
+    line-height: 1.65;
+    > code {
+      display: inline-block;
+      padding: 0 1ex;
+      background-color: black;
+      color: #cacaca;
+    }
+  }
+  > * {
+    margin-bottom: 2vh;
+  }
+  > ol {
+    margin-left: 2ch;
+    > li {
+      margin-bottom: 1ex;
+    }
+  }
+  > pre {
+    display: block;
+    background-color: black;
+    color: #cacaca;
+    padding: 1em;
+    overflow: auto;
+    width: 135%;
+    white-space: pre-wrap;
+    > code {
+      width: 90%;
+    }
+  }
+}
+
+.dynamicDetails {
+  display: block;
+  opacity: 0.75;
+}
+
+.videoComponent {
+  font-size: 132.25%;
+  margin: 0 0 4ex 0;
+  > h2 {
+    display: block;
+    width: 100%;
+    font-size: 2rem;
+    margin: 0 0 1ex 0;
+  }
+  > caption {
+    display: block;
+    font-size: 75.614%;
+    text-align: center;
+    max-width: 50ch;
+    margin: 0 auto;
+  }
+}
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  font-size: 132.25%;
+  margin: 0 0 4ex 0;
+  box-shadow: 0px 4px 16px #5d4c3c;
+  border: 5px solid #5d4c3c;
+  > iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.highlight {
+  display: block;
+  border-left: 4px solid #5d4c3c;
+  padding-left: 1em;
+  margin-bottom: 2ex;
+  > p {
+    line-height: 2;
+  }
+}
+
+.subtitle {
+  display: block;
+  font-size: calc(1rem + 2vw);
+  margin-bottom: 0.75ex;
+}
+
+.imageContainer {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  > img {
+    max-width: 100%;
+    margin: 0 auto;
+    box-shadow: 0px 4px 16px #5d4c3c;
+    border: 5px solid #5d4c3c;
+    margin-bottom: 1.5rem;
+  }
+  > caption {
+    text-align: center;
+    font-size: 95%;
+  }
+}

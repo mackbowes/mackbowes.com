@@ -1,0 +1,116 @@
+---
+title: "Writing a Blog with Next Js and Markdown in 2021"
+author: "Mack Bowes"
+date: "May 15 2021"
+category: "Programming"
+excerpt: "A needlessly difficult task when programs like wordpress exist, but an interesting challenge I'm happy to document."
+---
+
+<Spacer height={`5vh`} />
+
+This was definitely a challenge. All told, it took about 6 days to get working in a way I'm satisfied with.
+
+The reason for this isn't because the task is necessarily complex, but says something more about how search engines interact with technical content and the dizzying size of tooling available to modern web developers.
+
+#### Let's move on to the guide.
+
+Next.js is a great platform for developers. When using Next, we get a lot of benefits. We get to write in a familiar way, easily build components to extend their thoughts, and get all the benefits of static site generation in terms of SEO by building SEO focused components. It presents a high degree of freedom and a low degree of friction at deploy time.
+
+However, the main goal of the framework is, like any other React framework, to provide a skeleton for dynamic content to be compiled into a consistent and usable user interface. These frameworks are built to help us create competitors to big tech, competitors or extensions to things like Instagram, Facebook, Reddit, TikTok, and so on.
+
+Next.js excels at providing tooling to build a platform for microblogging where content is controlled. When you want to build a UI for uploading, viewing, and sharing pictures that are automatically cropped to 1080px x 1080px with the option of uploading a paragraph's worth of caption, there's no better tool.
+
+It's great for ecommerce too - the baked in consistency allows a developer to build a hands free platform that an ecommerce owner can populate with products that are SEO optimized, replete with custom dashboards and administration.
+
+It's a bit confusing to use it as a developer blog - and, in fact, the package that pulled the project together [(`next-mdx-remote`)](https://www.npmjs.com/package/next-mdx-remote), snarkily remarked that 99% of people using that package are building 'overly complicated developer blogs.'
+
+### Well... yea.
+
+As a developer, I chose to use Next.js for my blog so I could write and include example components in my blog.
+Tough to do that with wordpress.
+
+## First challenge: pulling in content
+
+This one took a while to figure out. Eventually, I had to dive into the actual NodeJS documentation. NextJS can be statically generated, if you so choose, so you can do some nifty things at compile time that reminded me very much of hacking on Wordpress years ago.
+
+This was by far the most overwhelming part of the process - React excels at importing data and populating components, but there are so many options for data storage. I played with MongoDB and SupaBase and quickly realized they wouldn't lend themselves to the easy implementation I was looking for.
+
+I decided on simply including the data in my repository. This will bring problems later if I keep up with the blog and the number of posts enters the triple digits, but at that point I should be able to figure out how to transmit and parse MDX over HTTP requests.
+
+#### Anyways, let's go through the code that makes this possible (updated for 2021):
+
+First, our imports:
+
+    import fs from 'fs'
+    import { join } from 'path'
+    import matter from 'gray-matter'
+
+`gray-matter` is a package that you have to add either via `npm i gray-matter` or `yarn add grey-matter`...
+
+`'fs'` and `'path'` are, to be clear, **not** packages that you must import at the time of writing. They were just available. `'fs'` is a part of Nodejs, I'm not sure where `'path'` comes from at the time of writing.
+
+Notice as well that we're importing a destructured object from `'path'` - specifically, `join`.
+
+    const postsDirectory = join(process.cwd(), '_posts')
+
+This line has some nifty stuff going on.
+`process.cwd()` gets the Current Working Directory (hence the name) where _**Node** is running_. This is important - bascially, it selects your project file in Next.js, ie your `project_name` folder, _but it **won't always do that** so be careful._
+
+`'_posts'` is the name of the folder where my posts live - _**change** this to suit your project_.
+
+the `join()` function concatenates those two values into a string that I can pass around future functions to target the folder where all my posts live.
+
+#### Now, our first exported function:
+
+    export const getSortedPosts = () => {
+    // Reads all the files in the post directory
+    const fileNames = fs.readdirSync(postDirectory);
+
+    // Gets the data of all posts
+    const allPostsData = fileNames.map((filename) => {
+    	const slug = filename.replace(".mdx", "");
+    	// Targets the MDX file
+    	const fullPath = path.join(postDirectory, filename);
+    	// Extracts contents of the MDX file
+    	const fileContents = fs.readFileSync(fullPath, "utf8");
+    	// Converts the contents of the file into usable data
+    	const { data } = matter(fileContents);
+
+    	// This codeblock converts the date field of the posts' metadata into something consistent
+    	const options = { month: "long", day: "numeric", year: "numeric" };
+    	const formattedDate = new Date(data.date).toLocaleDateString(
+    	"en-US",
+    	options
+    	);
+    	// this prepares data for export
+    	const frontmatter = {
+    	...data,
+    	date: formattedDate, // updating the date parameter
+    	};
+
+    	return {
+    	slug,
+    	...frontmatter,
+    	}; // returns good data
+    });
+
+    // Returns an array sorted by date, newest first.
+    // Super basic Javascript array processing, thank you Leetcode
+    return allPostsData.sort((a, b) => {
+    	if (new Date(a.date) < new Date(b.date)) {
+    	return 1;
+    	} else {
+    	return -1;
+    	}
+    });
+    };
+
+This function is pretty straight forward. It accesses the folder where all the posts live via the `postDirectory` constant, reads all the files in there, then maps over that result. In that process, it defines a slug for the post by stripping the `'.mdx'` file extension (to map the name of the post to a later `/blog/[slug].js` route).
+
+Next, it creates a fullPath by joining the directory of the post and the name of the file being worked on, and passes that to the `fs.readFileSync` function to access the data in that file using `utf-8` encoding. It uses the `gray-matter` package to parse the data there (including metadata, fantastically) and destructures that into the `data` variable.
+
+There's some data cleaning using the `Date().toLocaleDateString()` function which is required to sort the blog posts by date later on. The `data` and clean date are parsed into a `frontmatter` variable which is returned, destructured, along with the slug at the end of the function for later processing. I think there's room for improvements to this algorithm but it works for now.
+
+Finally, this function returns an array of all posts sorted by date.
+
+There's more to this but there's other things I want to start writing and researching so I'm pausing this for now and pushing my changes to github to update my site.

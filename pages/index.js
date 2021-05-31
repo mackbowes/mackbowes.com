@@ -14,9 +14,7 @@ export default function Home({allPostsData}) {
 			<Block>
 				<h1>Hi, I'm Mack Bowes.</h1>
 				<br />
-				<h2>I talk about programming and marketing.</h2>
-				<br />
-				<p>Currently, I'm interested in building full stack apps and cryptocurrencies and looking for ways to combine these.</p>
+				<p>There could be more stuff here but I'm not quite sure what to put.</p>
 			</Block>
 			<br />
 			<BlogGrid>

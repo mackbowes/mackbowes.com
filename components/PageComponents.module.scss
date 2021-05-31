@@ -1,11 +1,9 @@
 .pageWrapper {
   display: flex;
   flex-flow: column;
-  padding: 1rem;
-}
-
-.innerContent {
-  padding: 2rem;
+  max-width: clamp(150px, 100%, 1231px);
+  margin: 0 auto;
+  padding-top: 2vh;
 }
 
 .background {
@@ -51,20 +49,12 @@
 }
 
 .blogGrid {
-  width: 1231px;
-  max-width: 90%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 1rem;
-  row-gap: 1rem;
-  @media (min-width: 1200px) {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-  @media (min-width: 760) and (max-width: 1199) {
+  max-width: 1231px;
+  margin: 0 auto;
+  @media (min-width: 760px) {
     grid-template-columns: 1fr 1fr;
-  }
-  @media (max-width: 759) {
-    grid-template-columns: 1fr 1fr;
+    column-gap: 10vw;
   }
 }
 

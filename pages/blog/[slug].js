@@ -9,9 +9,12 @@ import {
 	Title, 
 	Section, 
 	Video} from '../../components/BlogComponents';
+import {
+	Button
+} from '../../components/FormComponents';
 import matter from 'gray-matter';
 
-const components = {BlogWrap, Spacer, Title, Section, Video};
+const components = {BlogWrap, Spacer, Title, Section, Video, Button};
 
 export default function Post({ content, frontMatter }) {
 	return(

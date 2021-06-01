@@ -3,6 +3,7 @@ import Head from 'next/head'
 import {useRouter} from 'next/router';
 import {Page, Nav, Background, Block, Spacer} from '../../components/PageComponents';
 import {Section} from '../../components/BlogComponents';
+import {Button} from '../../components/FormComponents';
 import {Age, Demographics, NegativeStates, Identities, Markets, HealthNiches, HealthAdjectives, HealthVehicles, WealthNiches, WealthAdjectives, WealthVehicles, RelationshipNiches, RelationshipAdjectives, RelationshipVehicles, EnemyAdjectives, Enemies} from '../../lib/avatars';
 import {RiLockLine, RiLockUnlockLine} from 'react-icons/ri';
 
@@ -148,20 +149,12 @@ export default function ThisPage() {
 					<title>Avatar Generator | Mack Bowes</title>
 				</Head>
 				<Block>
-					<div style={{padding: `1rem`}}>
+					<div style={{padding: `1rem 0`}}>
 						<h1>Avatar Generator</h1>
-						<h3>published on May 31 2021 by Mack Bowes</h3>
+						<h3>Quickly generate an avatar to start building your ecommerce empire</h3>
 						<Spacer height={`1rem`} />
-					</div>
-					<div style={{maxWidth: `70ch`}}>
-						<h4>Preamble</h4>
-						<p>I wrote this generator to help me come up with ideas for funnels to build and attract my ideal client: people who have a product to market, and need funnels built to sell it.<br />
-						I'm not super interested in inventing products - I like to code, do copywriting, and set up automations. So this generator makes it dead simple to invent 'dummy products' that I can build example funnels around.<br />
-						I included it on my website to help any other developer who is in the same boat.</p>
-						<p>Sometimes, the language isn't exactly right. Consider the copy produced here to be a starting block that you can edit to perfection later if you choose.</p><br />
-						<p>All you have to do to get started is hit the button below.</p>
-						<button style={{padding: `1ex 1em`, fontSize: `1rem`, margin: `1ex 0`}} onClick={() => ROLLTHEMBONES()}>Roll a new avatar</button>
-						<br /><br />
+						<Button onClick={() => ROLLTHEMBONES()}>Roll New Avatar</Button>
+						<Spacer height={`1rem`} />
 					</div>
 					<Section>
 						<h2 id="statusAndNiche">Status and Niche</h2>
@@ -183,10 +176,15 @@ export default function ThisPage() {
 						<h3>What are some little known aspects of {niche} that {name} might be looking for?</h3>
 						<br />
 						<p>The answers to this question become your avatar's <em>focus.</em><br />Your avatar's <em>focus</em> is the keyword phrase that's <em>always on their mind</em> and will capture their attention anywhere. Like calling their name, {name}, out in a crowded room.</p>
+						<p>
+							<b>{name}'s</b> focus phrases go directly into your social media and advertising.
+						</p>
 						</Box>
 						<p>
 							<h2>Enemies</h2>
-							<b>{name}</b> really wants to avoid wasting time and money on <b>{enemyAdjective} {enemy}</b>. They're on a mission to succeed, and these other <b>{enemy}</b> are just getting in the way. <br />
+							<b>{name}</b> really wants to avoid wasting time and money on <b>{enemyAdjective} {enemy}</b>. They're on a mission to succeed, and these other <b>{enemy}</b> are just getting in the way. 
+							<br /><br />
+							These <b>{enemyAdjective} {enemy}</b> are more than just <b>{enemyAdjective}</b>, too. They can be confusing, dishonest, greedy, self-serving, self-obsessed, inexperienced, or just straight up DISHONEST and are really just out for themselves and are more than happy to LIE to <b>{name}</b> to get the results that the <b>{enemy}</b> wants... even at <b>{name}'s</b> expense.<br /><br />
 							It seems like everybody has some 'magic solution' that instantly works... but <b>{name}</b> knows better. These 'magic solutions' are just distractions from the truth about <b>{interest}</b> through <b>{niche}</b>. <b>{name}</b> is unique, with unique circumstances... how could there possibly be a magic 'one-size-cures-all' solution that works for everyone?<br /><br />
 							<em>Where is the solution that works for {name}?</em>
 							<br/><br />
@@ -194,7 +192,9 @@ export default function ThisPage() {
 						</p>
 						<Box>
 						<h3>How did previous <b>{enemy}</b> fail to help {name}?</h3><br />
+						<p>Have previous <b>{enemy}</b> lied? Omitted crucial information? Failed to explain the details? Used technical jargon that makes no sense? Sold products that don't actually work?</p>
 						<p>The answers to this question will help you build a <em>connection</em> with {name} and build better products for them. Call out these failures - <em>never blame {name}</em> - and address how you're different from all those other {enemyAdjective} {enemy}.</p>
+						<p>The answers here go on to your <em>sales page.</em></p>
 						</Box>
 						<h2>Secret Sauce</h2>
 						<p>
@@ -212,15 +212,37 @@ export default function ThisPage() {
 						<p>→ Which commonly held myth is <b>{name}</b> working under that's SEWERING their results?</p><br />
 						<p>→ What confusing part of <b>{niche}</b> have all the other <b>{enemy}</b> failed to explain to <b>{name}</b> in a way they <em>actually understand?</em></p><br />
 						<p>→ What aspect of <b>{niche}</b> worked a few years ago but is no longer relevant or working?</p><br />
-						<p>The answer to these questions will create the <em>secrets</em> you can provide to {name}, separating you from all the other {market} 'experts' that aren't serving {name}.</p>
+						<p>The answer to these questions will create the <em>secrets</em> you can provide to {name}, separating you from all the other {market} 'experts' that aren't serving {name}. They help create and position your product.</p>
 						</Box>
 						<h3>The Solution</h3>
+						<h4>The Vehicle</h4>
 						<p>
-							What <b>{name}</b> really needs is some kind of <b>{vehicle}</b> to come along and unlock the secrets of <b>{niche}</b> so they can STOP being just another <b>{negativeState} {identity}</b> and finally become a <b>{positiveState} {gender}</b>. <br />
-							<b>{name}</b> needs a <b>{vehicle}</b> developed specifically for <b>{identity}s</b>, one that understands the problems that <b>{identity}s</b> go through every day and how that makes it so hard for them to finally solve <b>{niche}</b>.
+							<b>{name}</b> would be ecstatic to discover that there was some kind of <b>{vehicle}</b> to come across her radar and simple unlock the secrets of <b>{niche}</b>.
 						</p>
+						<p>
+							But not just any kind of <b>{vehicle}</b> - <b>{name}</b> needs a <b>{vehicle}</b> that's been proven to work, developed by a professional through the same blood, sweat, and tears that <b>{name}</b> puts in to their life as a <b>{negativeState} {identity}</b>.
+						</p>
+						<h4>Internal Roadblocks</h4>
+						<p>
+							<b>{name}</b> really just needs a <b>{vehicle}</b> developed specifically for <b>{identity}s</b>, one that understands the problems that <b>{identity}s</b> go through every day and how that makes it so hard for them to finally solve <b>{niche}</b>.
+						</p>
+						<p>
+							There are so many <b>{vehicle}s</b> out there already... but they've never worked for <b>{name}</b>. <b>{name}</b> is so frustrated to see so many other people enjoying their lives, having figured out <b>{niche}</b>, but <b>{name}</b> seems destined to sit on the sidelines and struggle.
+						</p>
+						<h4>External Roadblocks</h4>
+						<p>
+							Finally, <b>{name}</b> needs something that will work <em>fast</em> and <em>worth the money.</em> <b>{name}</b> is limited on their time and money - they can't continuously throw either at their problem of solving <b>{niche}</b> in order to get results, and for any <b>{vehicle}</b> to be a "No-Duh Instant Buy", <b>{name}</b> really needs to understand how that <b>{vehicle}</b> can solve <b>{niche}</b> quickly and easily so they can improve their <b>{market}</b> situation and become a <b>{positiveState} {identity}</b>.
+						</p>
+						<Box>
+							<h3>How does your product relate to {name}'s roadblocks?</h3>
+							<p>If you can show how your {vehicle} a) works, b) is specifically designed for {name}, and c) saves time or money (prioritize time bc broke customers are annoying) for {name}, there'll be no more objections and the sale can occur.</p>
+						</Box>
 					</Section>
-					<button onClick={() => ROLLTHEMBONES()}>Roll</button>
+					<Section>
+					<h2>Hope you enjoyed spending time with your new friend, {name}.</h2>
+					<p>If you're not feeling it, feel free to go again with the button below.</p>
+					<Button onClick={() => ROLLTHEMBONES()}>Roll New Avatar</Button>
+					</Section>
 				</Block>
 			</Page>
 		</Background>

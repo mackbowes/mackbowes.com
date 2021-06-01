@@ -1,0 +1,51 @@
+---
+title: "Simple Software | Avatar Generator"
+author: "Mack Bowes"
+date: "June 1 2021"
+category: "Programming"
+excerpt: "Combining marketing and programming to quickly and easily generate seeds for new business ideas."
+---
+
+<Spacer height={`5vh`} />
+
+This one was a little bit complicated but not too bad.
+
+The inspiration for this was Jim Edward's FunnelScripts product - a thousand dollar ruby on rails app that purports to help marketers quickly generate seeds for copy. Recently, he's been adding features to his app that center around understanding an avatar and connecting all copy to a central avatar.
+
+The big idea there is that, when marketing, your copy will get read thousands of times at first and... if it's good, millions of times... but it'll get read ONE person at a time. 
+
+Most people, when tasked with writing copy, are aware of how much reach their message will have and write to try to serve a wide audience... which ultimately alienates most people reading the message and serves very few people. It usually only succeeds in attracting people who were already going to purchase that product and needed a reminder, which is decidedly not a good business goal.
+
+Anyways, the way that this generator works is:
+
+I have a bunch of arrays with strings in them.
+
+One array is an array of objects that include a name and a 'gender' so I didn't generate any boys named Sue.  
+As a further point of extension, I think that there are gender words that also indicate something like maturity or seriousness, like how 'guy' and 'man' are meant to be interchangeable but come with their own charged baggage. I may write a new array of 'maleWords' and 'femaleWords' and randomly select between like 'guy' 'boy' 'man' 'dude' etc in the future.  
+
+There's one more value that I use, age. This is generated with Javascript's Math.random() in the client because it doesn't need to be cryptographically secure. I wrote a function that restricts the range of output to be between 18 and 65.  
+
+The main body of arrays are divided into the three main 'hot button' markets: health, wealth, and relationships (which are all kind of the same thing). If you subscribe to Maslow's hierarchy of needs, getting better access to each of these things fulfills needs at all 5 levels of the hierarchy.  
+After a market is selected, there are three further arrays: Niches, Vehicles, and Adjectives.  
+
+Niche arrays describe specific methods of achieving more of the market. For example, if the market is Health, a niche may be weight loss or anti-aging.  
+
+Vehicle arrays describe specific methods of achieving results in the niche. Vehicles are metaphorical, they're a method to transport the avatar from their current state where their needs aren't quite met to a new state where their needs are met. Examples of vehicles are books, guides, pills, creams, etc.  
+
+Finally, there are Adjective arrays. These describe states of being that the avatar wants to achieve. These depend on the market - for example, if an Avatar thought that their life would improve by getting better Relationships, it doesn't make sense to describe their future state as a successful millionaire.  
+
+There are also 'negativeAdjectives', which describe the avatars current state or identity. These are words like 'struggling', 'anxious', 'lonely' - some word that identifies how the avatars needs are being unmet.  
+
+Finally, there are 'enemy' arrays. These are relatively simple and small, they're used to identify ways that the avatar has failed to find success before.  
+
+This explanation is a bit complicated and it may be hard to imagine how all these parts work together. 
+
+[You can try it here](/things/avatargenerator)
+
+After you've tried it out, we can talk about the questions.
+
+I wanted to make the software actually helpful and usable, but unfortunately I can't do everything. 
+
+I'm following a mechanic from storytelling / fiction world generation in this avatar. Provide just enough concrete details for your reader and their mind goes to work to fill in the blanks. 
+
+In order for that phenomenon to be a useful tool, I feel the need to direct the background mental wandering. The questions at the end of each section will help marketers, copywriters, and product developers ideate on specific features and benefits. 

@@ -153,7 +153,7 @@ export default function ThisPage() {
 						<h1>Avatar Generator</h1>
 						<h3>Quickly generate an avatar to start building your ecommerce empire</h3>
 						<Spacer height={`1rem`} />
-						<Button onClick={() => ROLLTHEMBONES()}>Roll New Avatar</Button>
+						<Button clickFunction={() => ROLLTHEMBONES()}>Roll New Avatar</Button>
 						<Spacer height={`1rem`} />
 					</div>
 					<Section>
@@ -241,7 +241,7 @@ export default function ThisPage() {
 					<Section>
 					<h2>Hope you enjoyed spending time with your new friend, {name}.</h2>
 					<p>If you're not feeling it, feel free to go again with the button below.</p>
-					<Button onClick={() => ROLLTHEMBONES()}>Roll New Avatar</Button>
+					<Button clickFunction={() => ROLLTHEMBONES()}>Roll New Avatar</Button>
 					</Section>
 				</Block>
 			</Page>

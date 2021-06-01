@@ -93,7 +93,7 @@ export const EmailInput = (props) => {
 /**
  * 
  * @param {bool} isActive Controls the appearance of the button
- * @param {function} clickFunction Provide a function that happens when you click da button
+ * @param {*} clickFunction Provide a function that happens when you click da button
  * @returns A button
  */
 

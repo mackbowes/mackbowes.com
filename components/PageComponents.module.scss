@@ -54,7 +54,8 @@
   margin: 0 auto;
   @media (min-width: 760px) {
     grid-template-columns: 1fr 1fr;
-    column-gap: 10vw;
+    column-gap: 2.5vw;
+    row-gap: 2.5vw;
   }
 }
 

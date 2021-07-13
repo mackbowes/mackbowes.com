@@ -1,0 +1,125 @@
+.leftMarqueeWrap {
+  display: grid;
+  place-items: center;
+  top: 0;
+  left: 0;
+  transform-origin: 0 0;
+  transform: rotate(-90deg) translateX(-100%);
+  width: 100vh;
+  height: 5vw;
+  position: fixed;
+}
+
+.rightMarqueeWrap {
+  display: grid;
+  place-items: center;
+  top: 0;
+  left: 100vw;
+  transform-origin: 0 0;
+  transform: rotate(90deg);
+  width: 100vh;
+  height: 5vw;
+  position: fixed;
+}
+
+.innerMarqueeMask {
+  width: 95vh;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.innerMarquee {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.marqueeItem {
+  display: inline-block;
+  width: 100%;
+  white-space: nowrap;
+  margin-right: 1ch;
+  padding-right: 10px;
+}
+
+.bookingModalWrap {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.25);
+  place-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.bookingModal {
+  display: block;
+  background-color: white;
+  padding: 5vh;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 999;
+  transform: translateX(-50%) translateY(-50%);
+  > label {
+    display: block;
+    user-select: none;
+  }
+  > input {
+    display: block;
+    font-size: 18px;
+    font-family: "Source Serif Variable", Georgia, "Times New Roman", Times,
+      serif;
+    padding: 0.5ex 1em 0.5ex 0;
+    border: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 1em;
+    min-width: 40ch;
+    &:focus {
+      outline: none;
+    }
+  }
+  > button {
+    display: block;
+    width: 100%;
+    margin: 1ex 0;
+    font-size: 18px;
+    font-family: "Source Serif Variable", Georgia, "Times New Roman", Times,
+      serif;
+    cursor: pointer;
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 1.5ex;
+    transition: all 0.5s;
+    position: relative;
+    top: 0;
+    &:hover {
+      opacity: 0.88;
+      top: -0.5ex;
+    }
+  }
+}
+
+.bookingButton {
+  background-color: black;
+  color: white;
+  display: inline-block;
+  padding: 1ch 3ch;
+  border-radius: 3ch;
+  font-size: 24px;
+  line-height: 1.5;
+  position: fixed;
+  left: 50%;
+  top: 15px;
+  transform: translateX(-50%);
+  cursor: pointer;
+  transition: all 0.5s;
+  user-select: none;
+  z-index: 99;
+  &:hover {
+    top: 10px;
+    opacity: 0.88;
+  }
+}

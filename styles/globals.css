@@ -5,6 +5,7 @@ body {
   font-size: 18px;
   background-color: #e5e5e8;
   color: #242424;
+  font-family: "Source Serif Variable", Georgia, "Times New Roman", Times, serif;
 }
 ::-webkit-scrollbar {
   display: none;
@@ -16,7 +17,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Source Serif Pro", Georgia, "Times New Roman", Times, serif;
+  font-family: "Source Serif Variable", Georgia, "Times New Roman", Times, serif;
 }
 
 p {

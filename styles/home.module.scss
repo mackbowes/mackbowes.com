@@ -22,23 +22,35 @@
 .meRight {
   display: block;
   position: absolute;
-  width: 480px;
+  width: 30%;
   mix-blend-mode: luminosity;
   opacity: 0.5;
   height: auto;
   right: 0;
   bottom: 0;
+  @media screen and (max-width: 800px) {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    opacity: 0.25;
+  }
 }
 
 .meLeft {
   display: block;
   position: absolute;
-  width: 524px;
+  width: 30%;
   mix-blend-mode: luminosity;
   opacity: 0.5;
   height: auto;
   left: 0;
   bottom: 0;
+  @media screen and (max-width: 800px) {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    opacity: 0.25;
+  }
 }
 
 .content {
@@ -50,6 +62,11 @@
   width: 100vw;
   height: 100vh;
   font-weight: 400;
+  @media screen and (max-width: 1600px) {
+    width: 90vw;
+    left: 10vw;
+  }
+
   h2 {
     font-size: 48px;
     font-weight: 400;
@@ -64,6 +81,32 @@
     line-height: 1.25;
     margin-top: 1ex;
   }
+  @media screen and (max-width: 1200px) {
+    width: 97.5vw;
+    left: 5vw;
+    h1 {
+      font-size: 48px;
+    }
+    h2 {
+      font-size: 36px;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    width: 100%;
+    left: 0;
+  }
+  @media screen and (max-width: 600px) {
+    padding: 0 5vw;
+    h2 {
+      font-size: 32px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
 }
 
 .indicator {
@@ -72,6 +115,9 @@
   top: 50%;
   left: 30%;
   position: absolute;
+  @media screen and (max-width: 800px) {
+    display: none;
+  }
 }
 
 .dot {

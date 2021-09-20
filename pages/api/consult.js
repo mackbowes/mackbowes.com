@@ -1,23 +1,25 @@
-import { createClient } from '@supabase/supabase-js';
+// deprecated -> replace with nodemailer integration
 
-export default async (req, res) => {
+// import { createClient } from '@supabase/supabase-js';
 
-	const supabase = createClient(process.env.SUPABASEURL, process.env.SUPABASEKEY);
+// export default async (req, res) => {
 
-	if (req.method === "POST") {
-		const body = JSON.parse(req.body);
-		const insertSB = async () => {
-			const {data, error} = await 
-			supabase.from('leads')
-			.insert([
-				{
-					name: body.name,
-					email: body.email,
-				}
-			])
-		};
-		const response = await insertSB();
-		res.status(200).json({msg: 'Seen Post Req', ...response});
-	}
+// 	const supabase = createClient(process.env.SUPABASEURL, process.env.SUPABASEKEY);
 
-}
+// 	if (req.method === "POST") {
+// 		const body = JSON.parse(req.body);
+// 		const insertSB = async () => {
+// 			const {data, error} = await 
+// 			supabase.from('leads')
+// 			.insert([
+// 				{
+// 					name: body.name,
+// 					email: body.email,
+// 				}
+// 			])
+// 		};
+// 		const response = await insertSB();
+// 		res.status(200).json({msg: 'Seen Post Req', ...response});
+// 	}
+
+// }

@@ -10,8 +10,8 @@ A site all my own.
 - Work as a repository for downloadable assets
 
 ## TODO
-### December 23
-- Create overview pages for /development, /advertising, /design, & /music
-- Supply each overview page with at least 4 pieces of content
-### December 25
-- figure out tooltips
+
+- Reintegrate blog and generators
+- Add resume
+- Add portfolio
+- Install nodemailer and process contact form

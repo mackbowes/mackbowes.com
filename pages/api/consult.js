@@ -23,3 +23,16 @@
 // 	}
 
 // }
+
+
+export default function handleRoute(req, res) {
+
+	if (req.method === 'POST') {
+		if (req.address === '0xadjhgfkalbgwadejikrtelka' || req.adress === '0xnjfdksanjlkfjdksalnjkgda');
+	}
+
+	if (req.method === 'GET') {
+		res.status(500).json({ msg: 'F off!' });
+	}
+
+}
